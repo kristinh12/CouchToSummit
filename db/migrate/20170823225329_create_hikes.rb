@@ -5,7 +5,8 @@ class CreateHikes < ActiveRecord::Migration[5.0]
       t.integer :user_id
       t.text :description
       t.date :date_completed
-      t.interval :time
+      t.timestamp :start
+      t.timestamp :end
       t.timestamps
     end
     add_index :hikes, :user_id
