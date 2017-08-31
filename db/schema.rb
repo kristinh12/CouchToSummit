@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20170823225329) do
     t.integer  "user_id"
     t.text     "description"
     t.date     "date_completed"
-    t.datetime "start"
-    t.datetime "end"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.index ["user_id", "trail_id"], name: "index_hikes_on_user_id_and_trail_id", using: :btree
