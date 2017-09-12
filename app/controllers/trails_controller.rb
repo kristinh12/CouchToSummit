@@ -1,7 +1,7 @@
 class TrailsController < ApplicationController
 
   def index
-    @trails = Trail.all
+    @trails = Trail.all.page(params[:page]).per_page(20)
   end
 
   def show
