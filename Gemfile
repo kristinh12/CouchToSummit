@@ -63,4 +63,6 @@ gem 'devise'
 
 gem 'will_paginate', '~> 3.1.0'
 
+gem 'font-awesome-rails'
+
 
