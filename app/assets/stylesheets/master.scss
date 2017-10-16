@@ -22,3 +22,19 @@
 .clear {
   clear: both;
 }
+
+.couchtosummit-pagination {
+  font-weight: bold;
+  font-size: 18px;
+  word-spacing: 10px;
+  color: grey;
+}
+
+.couchtosummit-pagination a {
+  color: grey;
+}
+
+.couchtosummit-pagination a:hover {
+  text-decoration: none;
+  color: #668cff;
+}
