@@ -1,15 +1,16 @@
-<h1>Find a Hike</h1>
+<br />
+<div class="col-10 offset-1">
+  
+  <% @trails.each do |trail| %>
+    <h2><%= link_to trail.name, trail_path(trail) %></h2>
+    <ul>
+      <li><%= trail.length %>mi</li>
+      <li><%= trail.elevation_gain %>ft</li>
+    </ul>
+  <% end %>
 
-<% @trails.each do |trail| %>
-  <h2><%= link_to trail.name, trail_path(trail) %></h2>
-  <ul>
-    <li><%= trail.length %>mi</li>
-    <li><%= trail.elevation_gain %>ft</li>
-  </ul>
-<% end %>
+  <br class="clear" />
 
-<br class="clear" />
-
-<%= will_paginate @trails %>
-
+  <%= will_paginate @trails %>
+</div>
 <br />
