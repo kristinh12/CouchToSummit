@@ -1,13 +1,15 @@
 <br />
 <div class="col-10 offset-1">
   
-  <% @trails.each do |trail| %>
-    <h2><%= link_to trail.name, trail_path(trail) %></h2>
-    <ul>
-      <li><%= trail.length %>mi</li>
-      <li><%= trail.elevation_gain %>ft</li>
-    </ul>
-  <% end %>
+  <div class="trail">
+    <% @trails.each do |trail| %>
+      <h2><%= link_to trail.name, trail_path(trail) %></h2>
+      <ul>
+        <li><%= trail.length %>mi</li>
+        <li><%= trail.elevation_gain %>ft</li>
+      </ul>
+    <% end %>
+  </div>
 
   <br class="clear" />
 
