@@ -71,4 +71,4 @@ gem 'font-awesome-rails'
 
 gem 'geocoder'
 
-
+gem 'simple_form'
