@@ -1,5 +1,8 @@
 <br />
 <div class="col-10 offset-1">
+  <form id="search">
+    <input type="text" class="location">
+  </form>
   
   <div class="trail">
     <% @trails.each do |trail| %>
@@ -19,3 +22,9 @@
   
 </div>
 <br />
+
+<script>
+  $(function() {
+    console.log($("input"));
+    })
+</script>
